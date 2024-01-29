@@ -1,0 +1,75 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-image: url(BackGroundImage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.MainContainer{
+  width: 75%;
+  height: 75%;
+  margin-left: 12.5%;
+  margin-top: 6%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: white;
+}
+
+.MainContainerBlur{
+  width: 75%;
+  height: 75%;
+  margin-left: 12.5%;
+  margin-top: 6%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: white;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  border: 1px solid black;
+}
+
+h1{
+  text-align: center;
+  font-family: sans-serif;
+  width: 100%;
+  font-size: 25px;
+  background-color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+p{
+  text-align: center;
+  font-family: sans-serif;
+  width: 100%;
+  font-size: 20px;
+}
+
+.Button{
+  width: 50%;
+  height: 10%;
+  background-color: lime;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-left: 25%;
+  margin-top: 30%;
+  border: 1px solid black;
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: sans-serif;
+  position: absolute;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
