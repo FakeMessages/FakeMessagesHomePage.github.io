@@ -2,34 +2,60 @@
 <html>
 
 <head>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8076037088023307"
-     crossorigin="anonymous"></script>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-344EDEQZP1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-344EDEQZP1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-344EDEQZP1');
-</script>
+    gtag('config', 'G-344EDEQZP1');
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>FakeMessages</title>
+  <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <div class="MainContainerBlur">
-  </div>
   <div class="MainContainer">
+    
+    <div class="TopContainer">
+      <div class="Photo"><img class="PhotoImage" src="https://th.bing.com/th/id/OIP.tQYFfqM9HEki3rZPgBodgQHaHa?rs=1&pid=ImgDetMain"></div>
+      <textarea class="Name">Name</textarea>
+      <img class="BackImg" src="BackIcon.png">
+      <img class="FaceTimeImg" src="FaceTime.png">
+    </div>
+    
+    <div class="MiddleContainer">
+      <ul class="MessageList" id="MessageContainer">
+        <li><div class="SentMessage" id="SentMessage">Hey</div></li>
+        <li><div class="RecievedMessage" id="RecievedMessage">Hello</div></li>
+      </ul>
+    </div>
 
-    <h1>Fake Messages</h1>
-    <p>Create fun, captivating text messages!
-    </p>
-    <button class="Button" ><a href="https://fakemessages.github.io/Main/">Create</a></button>
+    <div class="SendMessageContainer" id="Menu">
+      <textarea class="InputBox" id="Text">Type message here</textarea>
+      <button class="SendMessageButton" id="Send">Send Message</button>
+      <button class="RecieveMessageButton" id="Recieve">Recieve Message</button>
+      <button class="ClearMessageButton" id="Clear">Clear</button>
+    </div>
+    
+    <div
+      class="BottomContainer">
+      <div class="MessageBox">
+        <img class="MicImage" src="Mic.png">
+        <div class="MessageButton">
+          <div class="MessageArea" id="MessageButtonText">
+          Message
+          </div>
+        </div>
+      </div>
+      <img class="CameraImage" src="Camera.png">
+      <img class="AppStoreImage" src="AppStore.png">
+    </div>
+    
   </div>
-  
+  <button id="Toggle"></button>
   <script src="script.js"></script>
 </body>
 
