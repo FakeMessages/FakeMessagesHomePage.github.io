@@ -1,75 +1,306 @@
 html {
   height: 100%;
   width: 100%;
-  background-image: url(BackGroundImage.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .MainContainer{
-  width: 75%;
-  height: 75%;
-  margin-left: 12.5%;
-  margin-top: 6%;
+  width: 100%;
+  height: 100%;
+  
   position: absolute;
   left: 0;
   top: 0;
-  background-color: white;
 }
 
-.MainContainerBlur{
-  width: 75%;
-  height: 75%;
-  margin-left: 12.5%;
-  margin-top: 6%;
+.TopContainer{
+  width: 100%;
+  height: 13%;
+
+  background-color: #2e2e2e;
+}
+
+.MiddleContainer{
+  width: 100%;
+  height: 81%;
+
+  overflow: auto;
+  background-color: #010101;
+}
+
+.BottomContainer{
+  width: 100%;
+  height: 6%;
+
+  background-color: #010101;
+}
+
+.Photo{
+  width: 47px;
+  height: 47px;
+  
   position: absolute;
-  left: 0;
-  top: 0;
+  display: block;
+  
+  margin-top: 9px;
+  margin-right: 50%;
+  margin-left: 50%;
+  transform: translate(-50%);
+  
   background-color: white;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-  border: 1px solid black;
+  border-radius: 100%;
 }
 
-h1{
-  text-align: center;
-  font-family: sans-serif;
+.PhotoImage{
   width: 100%;
-  font-size: 25px;
-  background-color: white;
-  font-weight: bold;
-  text-decoration: underline;
+  height: 100%;
+
+  border-radius: 100%;
 }
 
-p{
+.Name{
+  width: 150px;
+  height: 15px;
+
+  position: absolute;
+  display: block;
+
+  margin-top: 60px;
+  margin-right: 50%;
+  margin-left: 50%;
+  transform: translate(-50%);
+
+  background-color: transparent;
+  color: #ffffff;
   text-align: center;
+
   font-family: sans-serif;
-  width: 100%;
-  font-size: 20px;
+  font-size: 12px;
+
+  border: 0;
+  resize: none;
 }
 
-.Button{
+.BackImg{
+  height: 22px;
+  width: 22px;
+  
+  position: absolute;  
+  left: 20px;
+  margin-top: 13px;
+
+  padding: 10px;
+  
+  color: #0091ff;
+  background-color: transparent;
+}
+
+.FaceTimeImg{
+  height: 30px;
+  width: 30px;
+
+  position: absolute;  
+  right: 20px;
+  margin-top: 13px;
+
+  padding: 10px;
+
+  color: #0091ff;
+  background-color: transparent;
+}
+
+.MessageBox{
+  width: 62%;
+  height: 100%;
+
+  float: right;
+  margin-right: 5%;
+}
+
+.MessageButton{
+  width: 100%;
+  height: 80%;
+
+  border: 1px solid #4d4d4d;
+  border-radius: 50px;
+  font-family: sans-serif;
+}
+
+.MessageArea{
   width: 50%;
-  height: 10%;
-  background-color: lime;
-  font-weight: bold;
-  border-radius: 20px;
-  margin-left: 25%;
-  margin-top: 30%;
-  border: 1px solid black;
-  color: black;
-  font-size: 20px;
-  text-decoration: none;
+  height: 50%;
+
+  margin-top: 5px;
+  color: #4d4d4d;
+  margin-left: 10px;
   font-family: sans-serif;
-  position: absolute;
-  text-align: center;
 }
 
-a{
-  text-decoration: none;
+.MicImage{
+  width: 20px;
+  height: 20px;
+
+  float: right;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
+.CameraImage{
+  width: 30px;
+  height: 30px;
+
+  float: left;
+  margin-left: 20px;
+  margin-top: 0px;
+}
+
+.AppStoreImage{
+  width: 27px;
+  height: 25px;
+
+  float: left;
+  margin-left: 26px;
+  margin-top: 3px;
+}
+
+.MessageList{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.SentMessage{
+  float: right;
+  clear: both;
+
+  background-color: #008bf5;
+  color: white;
+
+  padding: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 20px;
+  border-bottom-right-radius: 0px;
+  margin-top: 8px;
+  margin-right: 12px;
+  margin-left: 29%;
+
+  font-family: sans-serif;
+  display: none;
+}
+
+.RecievedMessage{
+  float: left;
+  clear: both;
+
+  background-color: #292929;
+  color: white;
+  
+  padding: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 20px;
+  border-bottom-left-radius: 0px;
+  margin-top: 8px;
+  margin-left: 12px;
+  margin-right: 29%;
+  
+  font-family: sans-serif;
+  display: none;
+}
+
+.SendMessageContainer{
+  width: 90%;
+  height: 25%;
+
+  top: 65%;
+  left: 5%;
+  
+  position: absolute;
+  border-radius: 0;
+  overflow: hidden;
+  display: none;
+}
+
+.InputBox{
+  width: 100%;
+  height: 75%;
+
   color: black;
+  resize: none;
+  border: 0;
+  font-size: 16px;
+  border-radius: 0px;
+}
+
+.SendMessageButton{
+  width: 35%;
+  height: 25%;
+
+  background-color: #009dff;
+  color: black;
+  
+  font-family: sans-serif;
+  font-weight: bold;
+
+  padding-bottom: 7px;
+  border: 0;
+  border-right: 1px solid black;
+  float: left;
+}
+
+.RecieveMessageButton{
+  width: 35%;
+  height: 25%;
+
+  background-color: #6b6b6b;
+  color: black;
+
+  font-family: sans-serif;
+  font-weight: bold;
+
+  padding-bottom: 7px;
+  float: left;
+  border: 0;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.ClearMessageButton{
+  width: 30%;
+  height: 25%;
+
+  background-color: #ff0000;
+  color: black;
+
+  font-family: sans-serif;
+  font-weight: bold;
+
+  padding-bottom: 7px;
+  float: left;
+  border: 0;
+  border-left: 1px solid black;
+}
+
+#Toggle{
+  width: 62%;
+  height: 6%;
+
+  top: 93.5%;
+  left: 33%;
+  border-radius: 20px;
+  margin-right: 5%;
+  background-color: transparent;
+  position: absolute;
+  border: none;
+}
+
+::-webkit-scrollbar{
+  display: none;
 }
